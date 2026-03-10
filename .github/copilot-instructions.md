@@ -53,8 +53,11 @@ All project context lives in `claudebrain/`.
 
 ## Git and Environment Notes
 - One commit per logical change
+- Commit cadence: after each completed logical change, create the commit without waiting for an explicit commit request unless Ed asks to hold commits.
+- Use clear commit messages aligned to the actual change scope.
+- If a change boundary is unclear, ask whether to split or continue before committing.
 - Commit signing should be enabled
-- `eds_playground` may be pushed to GitHub when requested.
+- Push cadence for `eds_playground`: push when Ed explicitly requests in the current message, or when Ed gives a standing instruction for the session.
 - For any other repo in the workspace, do not add remotes or push unless Ed explicitly asks in the current message.
-- When a repo is designated local-only, keep it remote-free and block push workflows.
+- When a repo is designated local-only, keep it remote-free, allow local commits, and block push workflows.
 - If user interaction is required (passphrase prompt, browser auth), pause and wait for Ed
