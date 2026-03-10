@@ -5,17 +5,25 @@
 **Reading context:**
 - Start with `task.md` for current work, come here for project lookup, read `projects/{slug}.md` for depth.
 
+**After completing work:**
+- Update `task.md` and the relevant `projects/{slug}.md` cold file.
+
 **Creating a new project:**
-1. Add a row to the Project Registry table below.
-2. Create `projects/{slug}.md` using the Project File Format below.
-3. Add a backlog section in `task.md` under `## Project Backlog` with the slug as heading.
+1. If Ed provides a project name only, generate a slug automatically.
+2. Add a row to the Project Registry table below.
+3. Create `projects/{slug}.md` using the Project File Format below.
+4. Add a backlog section in `task.md` under `## Project Backlog` with the slug as heading.
 
 **Updating project status:**
 - `active` → currently being worked on
 - `paused` → on hold, will resume later
 - `archived` → done or abandoned; move remaining backlog items to cold file under "Backlog Archive"
 
-**Slug rules:** lowercase, hyphens, short (e.g. `my-app`, `api-gateway`).
+**Slug rules:**
+- Use lowercase, hyphenated, short slugs (e.g. `my-app`, `api-gateway`).
+- Slugs are internal project IDs and file path keys.
+- Ed can use natural project names in prompts; AI must generate and maintain slug mapping automatically.
+- Ask Ed for a slug only when disambiguation is required.
 
 ---
 
